@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15 Map Tiles</title>
+  </head>
+  <body>
+    <main>
+      <div id="statistics">
+        <p id="steps">Steps: <span id="steps-value"></span></p>
+        <p id="notification"></p>
+        <p id="time">Time: <span id="time-value"></span></p>
+      </div>
+      <div id="board"></div>
+      <div id="controls">
+        <button id="start">Start new Game</button>
+        <a href="https://www.openstreetmap.org/copyright/en" target="_blank"
+          >© OpenStreetMap contributors (opens in new tab)</a
+        >
+      </div>
+      <details name="guide">
+        <summary>What is this?</summary>
+        <p>
+          The Game is called
+          <a href="https://en.wikipedia.org/wiki/15_puzzle" target="_blank"
+            >15 puzzle (opens in new tab)</a
+          >.
+        </p>
+      </details>
+      <details name="guide">
+        <summary>How to play?</summary>
+        <p>
+          You can either use the Arrow keys or click on the tile that should be
+          moved.
+        </p>
+      </details>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

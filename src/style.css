@@ -1,0 +1,156 @@
+:root {
+  --field-size: 200px;
+  --margin: 2px;
+  --border-size: 4px;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --field-size: 100px;
+    --border-size: 2px;
+    --margin: 1px;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* background-color: #eee; */
+  background-color: rgba(173, 216, 230, 1);
+  /* background-color: rgba(240, 240, 240, 1); */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+details {
+  align-self: flex-start;
+}
+
+p {
+  margin: 4px;
+}
+
+#statistics,
+#controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#board {
+  width: calc(4 * var(--field-size) + 5 * var(--margin));
+  height: calc(4 * var(--field-size) + 5 * var(--margin));
+  border: var(--border-size) solid black;
+  position: relative;
+  background-color: #ddd;
+}
+
+.field {
+  box-sizing: border-box;
+  width: var(--field-size);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.field > img {
+  width: 100%;
+  height: 100%;
+}
+
+.field > span {
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+
+#field-1 {
+  top: calc(0 * var(--field-size) + 1 * var(--margin));
+  left: calc(0 * var(--field-size) + 1 * var(--margin));
+}
+
+#field-2 {
+  top: calc(0 * var(--field-size) + 1 * var(--margin));
+  left: calc(1 * var(--field-size) + 2 * var(--margin));
+}
+
+#field-3 {
+  top: calc(0 * var(--field-size) + 1 * var(--margin));
+  left: calc(2 * var(--field-size) + 3 * var(--margin));
+}
+
+#field-4 {
+  top: calc(0 * var(--field-size) + 1 * var(--margin));
+  left: calc(3 * var(--field-size) + 4 * var(--margin));
+}
+
+#field-5 {
+  top: calc(1 * var(--field-size) + 2 * var(--margin));
+  left: calc(0 * var(--field-size) + 1 * var(--margin));
+}
+
+#field-6 {
+  top: calc(1 * var(--field-size) + 2 * var(--margin));
+  left: calc(1 * var(--field-size) + 2 * var(--margin));
+}
+
+#field-7 {
+  top: calc(1 * var(--field-size) + 2 * var(--margin));
+  left: calc(2 * var(--field-size) + 3 * var(--margin));
+}
+
+#field-8 {
+  top: calc(1 * var(--field-size) + 2 * var(--margin));
+  left: calc(3 * var(--field-size) + 4 * var(--margin));
+}
+
+#field-9 {
+  top: calc(2 * var(--field-size) + 3 * var(--margin));
+  left: calc(0 * var(--field-size) + 1 * var(--margin));
+}
+
+#field-10 {
+  top: calc(2 * var(--field-size) + 3 * var(--margin));
+  left: calc(1 * var(--field-size) + 2 * var(--margin));
+}
+
+#field-11 {
+  top: calc(2 * var(--field-size) + 3 * var(--margin));
+  left: calc(2 * var(--field-size) + 3 * var(--margin));
+}
+
+#field-12 {
+  top: calc(2 * var(--field-size) + 3 * var(--margin));
+  left: calc(3 * var(--field-size) + 4 * var(--margin));
+}
+
+#field-13 {
+  top: calc(3 * var(--field-size) + 4 * var(--margin));
+  left: calc(0 * var(--field-size) + 1 * var(--margin));
+}
+
+#field-14 {
+  top: calc(3 * var(--field-size) + 4 * var(--margin));
+  left: calc(1 * var(--field-size) + 2 * var(--margin));
+}
+
+#field-15 {
+  top: calc(3 * var(--field-size) + 4 * var(--margin));
+  left: calc(2 * var(--field-size) + 3 * var(--margin));
+}
+
+#field-16 {
+  top: calc(3 * var(--field-size) + 4 * var(--margin));
+  left: calc(3 * var(--field-size) + 4 * var(--margin));
+  visibility: hidden;
+}
